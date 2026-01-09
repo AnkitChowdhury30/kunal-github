@@ -15,3 +15,9 @@ or
 rm -rf <filename> --> file delete kerna powershell se Linux unix mai
 
 git reset <commit-id> --> ye us commit per pauch jata h jiska id diya ho
+
+git stash clear --> add kerne ke baad stash kiya to jo change tha delete ker diya hamesa ke liye ab hum git stash pop nhi ker skte h
+
+git remote add origin <urlname> --> apne folder ko url se jodna
+
+git push origin main -->given url ke main branch per daal do code
