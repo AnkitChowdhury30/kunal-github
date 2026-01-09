@@ -1,0 +1,17 @@
+git init --> apna folder ko git repo banana means ab sub kuch track hoga
+
+git add . --> jo bhi files h us folder mai sbko stage  mai laana
+
+git status --> dekna ki kon sa file stage mai h and kon stage ke bahar 			groung mai h
+
+git restore --staged <filename>  --> jo file glti se git add se add ho 					     gya unko fir se stage se bahar lana
+
+git log --> sbi commits dekna
+
+git commit -m "<message>"  --> photo lena files ka 
+
+Remove-item <filename>  --> file delete kerna windows powershell mai
+or
+rm -rf <filename> --> file delete kerna powershell se Linux unix mai
+
+git reset <commit-id> --> ye us commit per pauch jata h jiska id diya ho
