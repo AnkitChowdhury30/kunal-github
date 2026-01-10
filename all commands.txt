@@ -21,3 +21,53 @@ git stash clear --> add kerne ke baad stash kiya to jo change tha delete ker diy
 git remote add origin <urlname> --> apne folder ko url se jodna
 
 git push origin main -->given url ke main branch per daal do code
+
+-----------------------------------------------
+steps to clone other repo
+
+1st) us repo ko apne GitHub se fork kero
+jaise aman/chatbot ko ankitchowdhury30/chatbot banao
+
+2) use command --> git clone <url>
+
+3nd) JAHA SE FORK KIYE H US URL KO UPSTREAM URL KEHTE H DEFAULT
+JO KI YAHA aman/chatbot
+command to add upstream url --> git remote add upstream <url>
+
+4rd) check kero kon se urls aapke repo se connected h ooper wala step ke baad aisa dikega
+
+ command to check all connected url with repo --> git remote -v
+origin  https://github.com/AnkitChowdhury30/kunal-github.git (fetch)
+origin  https://github.com/AnkitChowdhury30/kunal-github.git (push)
+upstream        https://github.com/Amanshaw445/chatbot.git (fetch)
+upstream        https://github.com/Amanshaw445/chatbot.git (push)
+
+5th) naya branch banao command --> git branch <yourbranchname>
+6th) apne branch mai head le aao --> git checkout <yourbranchname>
+7th) apne branch mai push keri changes ko --> git push origin ankit
+
+hum humesa main branch per push nhi kerege har feature ke liye new branch banaker usmai chijo ko dalege
+
+8th) maan lo humne ek pull req(branch) mai do commit maar diye
+rto reset kerne ke liye whi 
+git reset <reset-id>
+kero fir git add .
+git stash
+git push origin ankit -f  --> ye force push h chuki hum wo chij push ker rhai jaha pahele kuch tha jisko hum stash se delete kiye
+
+-----------------------------
+ab hota kya h ki aapne jo changes pr mai raise kiye wo merge ho jane per bhi aapke fork wale repo mai visible nhi hote h to iska solution h
+use fetch upstream option in GitHub 
+
+manually use these commands
+git checkout main
+git fetch --all --prune
+git reset --hard upstream/main
+git push origin main
+
+or 
+
+git pull upstream main (apne m/c mai sb new codes of main branch of project repo lana)
+git push origin main (apne acc ke repo ke main branch mai sb new codes ko dalna)
+--------------------------------------
+
